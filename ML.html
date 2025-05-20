@@ -1,0 +1,634 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:10.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>1.What is Simple Linear Regression?</p>
+
+<p class=MsoNormal>Answer  Simple linear regression is used to find the
+relationship between two variables by fitting the               </p>
+
+<p class=MsoNormal>             best straight line through the data points</p>
+
+<p class=MsoNormal>2. - What are the key assumptions of Simple Linear
+Regression?</p>
+
+<p>Answer   <strong>Key assumptions of Simple Linear Regression are:</strong></p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Linearity</strong>: The relationship between the independent and
+dependent variables is linear.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Independence</strong>: The residuals (errors) are independent.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Homoscedasticity</strong>: The variance of the residuals is
+constant across all levels of the independent variable.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Normality</strong>: The residuals are normally distributed.</p>
+
+<p class=MsoNormal>3 What does the coefficient m represent in the equation
+Y=mX+c?</p>
+
+<p class=MsoNormal>Answer In the linear equation Y=mX+c, the coefficient m
+represents the slope of the line.</p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span lang=EN-IN>The m tells us  how steep the line is.</span></li>
+ <li class=MsoNormal><span lang=EN-IN>If m is positive, the line goes up as we
+     move to the right.</span></li>
+ <li class=MsoNormal><span lang=EN-IN>If m is negative, the line goes down as we
+     move to the right.</span></li>
+ <li class=MsoNormal><span lang=EN-IN>Basically, m shows how much Y changes
+     when X changes.</span></li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>4 What does the intercept c represent in the equation
+Y=mX+c?</p>
+
+<p class=MsoNormal>Answer <span lang=EN-IN>In the equation Y=mX+cY = mX + c,
+the intercept cc represents the point where the line crosses the Y-axis.</span></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal><span lang=EN-IN>This happens when X=0X = 0.</span></li>
+ <li class=MsoNormal><span lang=EN-IN>So, cc is the value of YY when XX is 0</span></li>
+</ul>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>5 - How do we calculate the slope m in Simple Linear
+Regression?</p>
+
+<p>Answer  To calculate the slope m in simple linear regression, we can use the
+following formula:</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>               m=∑(xi−xˉ)(yi−yˉ)
+</span><span style='font-size:20.0pt;font-family:"Times New Roman",serif'>/</span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> ∑(xi−xˉ)2</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'> 6 </span> What is
+the purpose of the least squares method in Simple Linear Regression?</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'>Answer &gt;&gt;The
+purpose of the least squares method in simple linear regression is to find the
+best-fitting line through a set of data points by minimizing the sum of the
+squared differences (residuals) between the observed values and the values
+predicted by the linear model. This method ensures that the line is as close as
+possible to all the data points, providing the most accurate representation of
+the relationship between the variables.</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'>7 How is the
+coefficient of determination (R²) interpreted in Simple Linear Regression?</p>
+
+<p class=MsoNormal>Answer&gt;&gt; <span style='font-size:12.0pt;line-height:
+115%;font-family:"Times New Roman",serif'>How is the coefficient of
+determination (R²) interpreted in Simple Linear Regression</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>The coefficient of determination, denoted
+as R2R^2, is a measure of how well the regression line explains the variation
+in the dependent variable. It ranges from 0 to 1 and is interpreted as follows:</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>R2=1R^2 = 1: The regression line
+     perfectly fits the data, explaining all the variability in the dependent
+     variable.</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>0&lt;R2&lt;10 &lt; R^2 &lt; 1: The
+     regression line explains some, but not all, of the variability in the
+     dependent variable. The closer R2R^2 is to 1, the better the model fits
+     the data.</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>R2=0R^2 = 0: The regression line does
+     not explain any of the variability in the dependent variable.In essence,
+     R2R^2 tells us the proportion of the variance in the dependenvariable that
+     is predictable from the independent variable. </span></li>
+</ul>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>8</span>- What is Multiple Linear
+Regression?</p>
+
+<p class=MsoNormal style='line-height:normal'>Answer  <strong><span
+style='font-family:"Calibri",sans-serif'>Multiple Linear Regression</span></strong>
+is a statistical technique used to predict the value of a dependent variable
+based on multiple independent variables. Essentially, it helps us understand
+how different factors together influence an outcome.</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>9 What is the main difference
+between Simple and Multiple Linear Regression?</p>
+
+<p class=MsoNormal style='line-height:normal'>Answer&gt;&gt; The main
+difference between simple and multiple linear regression is that simple linear
+regression uses only one independent variable to predict the target variable,
+while multiple linear regression uses two or more independent variables for
+prediction.</p>
+
+<p class=MsoNormal style='line-height:normal'>10  What are the key assumptions
+of Multiple Linear Regression?</p>
+
+<p>Answer  The key assumptions of Multiple Linear Regression:</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Linearity</strong>: The relationship between the variables is a
+straight line.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Independence</strong>: Each data point is independent of the
+others.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Equal Variance</strong>: The spread of the data is the same for
+all values of the independent variables.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Normality</strong>: The data follows a normal distribution.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>No Correlation</strong>: The independent variables are not too
+closely related to each other.</p>
+
+<p>11  What is heteroscedasticity, and how does it affect the results of a
+Multiple Linear Regression model?</p>
+
+<p>Answer <strong>Heteroscedasticity</strong> occurs when the variance of the
+residuals (errors) in a regression model is not constant across all levels of
+the independent variables. In other words, the spread of the residuals changes
+as the value of the independent variables changes.</p>
+
+<p><strong>Impact on Multiple Linear Regression:</strong></p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Inaccurate Standard Errors</strong>: Heteroscedasticity
+can lead to incorrect estimates of the standard errors of the regression
+coefficients, which affects the reliability of hypothesis tests and confidence
+intervals.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Biased Estimates</strong>: The regression coefficients
+may still be unbiased, but the efficiency of the estimates is reduced, meaning
+they are less precise.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Invalid Statistical Inferences</strong>: The presence of
+heteroscedasticity can invalidate the results of statistical tests, leading to
+incorrect conclusions about the significance of the independent variables.</p>
+
+<p>12 How can you improve a Multiple Linear Regression model with high
+multicollinearity?</p>
+
+<p>Answer Apply methods like Ridge Regression or Lasso Regression, Elastic Net
+we can handle multicollinearity by adding a penalty to the regression
+coefficients.</p>
+
+<p>13 What are some common techniques for transforming categorical variables
+for use in regression models?</p>
+
+<p>Answer&gt;&gt;Here are some common techniques for transforming categorical
+variables for use in regression models:</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>One-Hot Encoding</strong>: Converts categorical features into
+binary vectors, with one column for each category.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Label Encoding</strong>: Assigns a unique integer to each
+category, but can introduce an artificial order.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Ordinal Encoding</strong>: Similar to Label Encoding but
+preserves the order of categories if they have a meaningful sequence.</p>
+
+<p>14 What is the role of interaction terms in Multiple Linear Regression?</p>
+
+<p>Answer <strong>Interaction terms</strong> show how two or more variables
+together affect the outcome in a regression model.</p>
+
+<p>15 How can the interpretation of intercept differ between Simple and
+Multiple Linear Regression?</p>
+
+<p>Answer In <strong>Simple Linear Regression</strong>, the intercept
+represents the expected value of the dependent variable when the independent
+variable is zero.</p>
+
+<p>In <strong>Multiple Linear Regression</strong>, the intercept represents the
+expected value of the dependent variable when all the independent variables are
+set to zero.</p>
+
+<p>16 What is the significance of the slope in regression analysis, and how
+does it affect predictions?</p>
+
+<p>Answer&gt;&gt;The <strong>slope</strong> in regression analysis shows how
+much the dependent variable changes when the independent variable increases by
+one unit. It helps predict the outcome based on the input.</p>
+
+<p>17 How does the intercept in a regression model provide context for the
+relationship between variables?</p>
+
+<p>Answer The <strong>intercept</strong> in a regression model is the starting
+value of the dependent variable when all independent variables are zero. It
+gives a baseline to understand the relationship between variables.</p>
+
+<p>&nbsp;</p>
+
+<p>18 What are the limitations of using R² as a sole measure of model
+performance?</p>
+
+<p>Answer Limitations of using R² as a sole measure of model per:</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Overfitting</strong>: High R² might mean the model is too
+complex.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Scale Sensitivity</strong>: R² can be misleading when comparing
+different scales.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>No Penalty for Complexity</strong>: Adding more variables can
+inflate R².</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Limited Applicability</strong>: R² is mainly for linear
+regression and not other models.</p>
+
+<p style='margin-left:.25in'>&nbsp;</p>
+
+<p>19 How would you interpret a large standard error for a regression
+coefficient?</p>
+
+<p>Answer A large standard error for a regression coefficient means the
+estimate is uncertain and could vary significantly with new data. It shows
+we're less sure about the true value of that coefficient.</p>
+
+<p>20  How can heteroscedasticity be identified in residual plots, and why is
+it important to address it?</p>
+
+<p>Answer <strong>Heteroscedasticity</strong> can be identified in residual
+plots by looking for patterns where the spread of residuals (errors) changes
+across different levels of the independent variable. Specifically, if the
+residuals form a funnel shape, with the spread increasing or decreasing as the
+predicted values increase, it indicates heteroscedasticity.</p>
+
+<p><strong>It is  important to address for following reasons</strong>:</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Inaccurate Standard Errors</strong>: Heteroscedasticity
+can lead to incorrect estimates of the standard errors of the regression
+coefficients, affecting hypothesis tests and confidence intervals.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Biased Estimates</strong>: While the regression
+coefficients themselves may still be unbiased, their efficiency is reduced,
+making them less reliable.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'><span style='font-size:10.0pt;
+font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><strong>Invalid Statistical Inferences</strong>: The presence of
+heteroscedasticity can invalidate the results of statistical tests, leading to
+incorrect conclusions about the significance of the independent variables.</p>
+
+<p><strong>21</strong> What does it mean if a Multiple Linear Regression model
+has a high R² but low adjusted R²?</p>
+
+<p class=MsoNormal>Answer <span style='font-size:12.0pt;line-height:115%;
+font-family:"Times New Roman",serif'>)B- What does it mean if a Multiple Linear
+Regression model has a high R² but low adjusted R²</span></p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>If a Multiple Linear Regression model has
+a high <b>R²</b> but a low <b>adjusted R²</b>, it suggests that:</span></p>
+
+<ol start=1 type=1>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>Overfitting</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>: The model
+     may be overfitting the data, capturing noise rather than the true
+     underlying relationship.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>Too Many Variables</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>: The high R²
+     is likely due to including too many variables, some of which may not be
+     truly significant.</span></li>
+ <li class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>Adjusted R² Penalty</span></b><span
+     style='font-size:12.0pt;font-family:"Times New Roman",serif'>: Adjusted R²
+     penalizes the addition of non-informative predictors, providing a more
+     accurate measure of model performance.</span></li>
+</ol>
+
+<p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>22 </span></b>Why is it important to scale
+variables in Multiple Linear Regression?</p>
+
+<p class=MsoNormal style='line-height:normal'>Answer   Scaling helps to
+standardize the data, reducing calculation time and improving the accuracy and
+efficiency of the model.</p>
+
+<p class=MsoNormal style='line-height:normal'>23. What is polynomial
+regression?</p>
+
+<p>ANSWER&gt;&gt;&gt; <strong>Polynomial regression</strong> is a way to fit a
+curve to data instead of a straight line. It helps capture more complex
+relationships between variables.</p>
+
+<p>24 How does polynomial regression differ from linear regression?</p>
+
+<p>ANSWER&gt;&gt; <strong>Polynomial regression</strong> differs from <strong>linear
+regression</strong> in that it fits a curve to the data, while linear
+regression fits a straight line. Polynomial regression can capture more complex
+relationships by including higher-degree terms (like x2x^2, x3x^3, etc.),
+whereas linear regression only includes the first-degree term (xx).</p>
+
+<p>25 When is polynomial regression used?</p>
+
+<p>ANSWER&gt;&gt; Polynomial regression is used when the relationship between
+the independent variable and the dependent variable is not linear, meaning it
+cannot be accurately captured by a straight line. It's helpful when the data
+shows a curved pattern, allowing for a better fit and more accurate
+predictions.</p>
+
+<p>26 What is the general equation for polynomial regression?</p>
+
+<p>ANSWER&gt;&gt; The general equation for polynomial regression is:</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>y=b0+b1x+b2x2+…+bnxn+ϵ
+ </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>        Where y is
+the dependent variable</span></p>
+
+<ul type=disc>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>x is the independent variable</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>b0,b1,…,bn are the coefficients</span></li>
+ <li class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+     font-family:"Times New Roman",serif'>ϵ is the error term</span></li>
+</ul>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>27  </span>Can polynomial regression be
+applied to multiple variables?</p>
+
+<p class=MsoNormal style='line-height:normal'>Answer  <strong><span
+style='font-family:"Calibri",sans-serif'>Yes, polynomial regression can handle
+multiple variables</span></strong>. It means we can include not just the
+original variables but also their squared and combined terms to create a more
+detailed model.</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>28   What are the limitations of
+polynomial regression ?</p>
+
+<p class=MsoNormal style='line-height:normal'>Limitations of Polynomial
+regressions are:</p>
+
+<p>Answer  <span style='font-family:Symbol'>·</span>  <strong>Overfitting</strong>:
+Higher-degree polynomials can fit the training data very well, capturing noise
+along with the underlying data pattern. This can lead to poor performance on
+new, unseen data.</p>
+
+<p><span style='font-family:Symbol'>·</span>  <strong>Complexity</strong>: As
+the degree of the polynomial increases, the model becomes more complex and
+harder to interpret.</p>
+
+<p><span style='font-family:Symbol'>·</span>  <strong>Computation</strong>:
+Higher-degree polynomials require more computational resources and can be
+slower to train and evaluate.</p>
+
+<p><span style='font-family:Symbol'>·</span>  <strong>Extrapolation</strong>:
+Polynomial regression can behave unpredictably outside the range of the
+training data, leading to unreliable predictions.</p>
+
+<p>29  What methods can be used to evaluate model fit when selecting the degree
+of a polynomial?</p>
+
+<p>Answer We can use these method to evaluate model fit when selecting the
+degree of a polynomial?:</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Mean Squared Error (MSE)</strong>: Lower is better.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>R-squared (R²)</strong>: Higher is better.</p>
+
+<p style='margin-left:.5in;text-indent:-.25in'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span><strong>Cross-Validation</strong>: Check if the model works well on
+different data sets.</p>
+
+<p>30 Why is visualization important in polynomial regression?</p>
+
+<p>Answer&gt;&gt; Visualization is important in polynomial regression because
+it helps us see how well the model fits the data and makes it easier to
+understand and explain the results</p>
+
+<p>&nbsp;</p>
+
+<p>31 How is polynomial regression implemented in Python?</p>
+
+<p>Answer&gt;&gt; Steps to implement polynomial regression in python are as
+follows:</p>
+
+<p>1 <strong>Import Libraries</strong>:</p>
+
+<p>import numpy as np</p>
+
+<p>import matplotlib.pyplot as plt</p>
+
+<p>from sklearn.model_selection import train_test_split</p>
+
+<p>from sklearn.preprocessing import PolynomialFeatures</p>
+
+<p>from sklearn.linear_model import LinearRegressionfrom sklearn.metrics import
+mean_squared_error, r2_score</p>
+
+<p>2  <strong>Generate Data</strong>:</p>
+
+<p>np.random.seed(0)</p>
+
+<p>x = 2 - 3 * np.random.normal(0, 1, 20)</p>
+
+<p>y = x - 2 * (x ** 2) + 0.5 * (x ** 3) + np.random.normal(-3, 3, 20)</p>
+
+<p>3 <strong>Split Data</strong>:</p>
+
+<p>x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2,
+random_state=0)</p>
+
+<p>4 <strong>Transform Data</strong>:</p>
+
+<p>poly = PolynomialFeatures(degree=2)</p>
+
+<p>x_poly = poly.fit_transform(x_train.reshape(-1, 1))</p>
+
+<p>5 <strong>Fit Model</strong>:</p>
+
+<p>model = LinearRegression()</p>
+
+<p>model.fit(x_poly, y_train)</p>
+
+<p>6 <strong>Predict and Evaluate</strong>:</p>
+
+<p>y_poly_pred = model.predict(x_poly)</p>
+
+<p>rmse = np.sqrt(mean_squared_error(y_train, y_poly_pred))</p>
+
+<p>r2 = r2_score(y_train, y_poly_pred)</p>
+
+<p>print('RMSE:', rmse)</p>
+
+<p>print('R2:', r2)</p>
+
+<p>&nbsp;</p>
+
+<p>7 <strong>Plot Results</strong>:</p>
+
+<p>plt.scatter(x_train, y_train, color='red')</p>
+
+<p>plt.plot(x_train, y_poly_pred, color='blue')</p>
+
+<p>plt.title('Polynomial Regression')</p>
+
+<p>plt.xlabel('X')</p>
+
+<p>plt.ylabel('Y')</p>
+
+<p>plt.show()</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'>&nbsp;</p>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
